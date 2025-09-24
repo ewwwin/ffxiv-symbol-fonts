@@ -1,7 +1,8 @@
 @font-face {
 	font-family: "FFXIV_Lodestone_SSF";
 	src: url("FFXIV_Lodestone_SSF.eot");
-	src: url("FFXIV_Lodestone_SSF.eot#iefix") format("eot"),
+	src:
+		url("FFXIV_Lodestone_SSF.eot#iefix") format("eot"),
 		url("FFXIV_Lodestone_SSF.eot") format("eot"),
 		url("FFXIV_Lodestone_SSF.woff2") format("woff2"),
 		url("FFXIV_Lodestone_SSF.woff") format("woff"),
