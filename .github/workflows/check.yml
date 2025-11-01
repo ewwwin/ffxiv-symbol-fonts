@@ -1,7 +1,7 @@
 on:
-  workflow-dispatch:
+  workflow_dispatch:
   schedule:
-    cron: "21 5 * * *" # 05:21 every day
+    - cron: "21 5 * * *" # 05:21 every day
 permissions:
   contents: write
   pull-requests: write
@@ -9,10 +9,10 @@ jobs:
   check:
     runs-on: ubuntu-latest
     steps:
-      - use: actions/checkout@v4
+      - uses: actions/checkout@v4
       - run: sudo apt install -y fontforge
       - run: ./make.sh
-      - run: peter-evans/create-pull-request@v7
+      - uses: peter-evans/create-pull-request@v7
         with:
           commit-message: Automated font update from Lodestone
           branch: chore/gha-update-from-lodestone
