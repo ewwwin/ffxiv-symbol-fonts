@@ -18,4 +18,11 @@ for i in font.selection.byGlyphs:
     font.removeGlyph(i)
 font.generate(argv[1])
 " "$file"
+	# remove metadata from svg font for cleaner diffs
+	echo $file
+	case "$file" in
+	*.svg)
+		sed -i '/<metadata>/,/<\/metadata>/d' "$file"
+		;;
+	esac
 done
