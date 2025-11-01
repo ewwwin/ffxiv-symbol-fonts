@@ -2,12 +2,12 @@ on:
   workflow_dispatch:
   schedule:
     - cron: "21 5 * * *" # 05:21 every day
-permissions:
-  contents: write
-  pull-requests: write
 jobs:
   check:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
     steps:
       - uses: actions/checkout@v4
       - run: sudo apt install -y fontforge
