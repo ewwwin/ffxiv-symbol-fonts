@@ -3,6 +3,8 @@
 <head>
 	<title>ffxiv-symbol-fonts: All characters</title>
 	<meta charset="utf-8" />
+	<!-- cheekily steal github pages' default styles to make my life easier -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 	<link rel="stylesheet" type="text/css" href="FFXIV_Lodestone_SSF.css" />
 	<style>
 		body {
@@ -10,20 +12,10 @@
 			margin-inline: auto;
 			font-family: sans-serif;
 		}
-		table {
-			margin-inline: auto;
-			border-collapse: collapse;
-		}
-		th, td {
-			border: 1px solid gray;
-			padding: 2px;
-		}
 		th {
 			text-align: right;
-			background: lightgray;
 			font-weight: normal;
 			font-family: monospace;
-			padding-inline: 4px;
 		}
 		tr:first-child th,
 		td {
@@ -35,7 +27,7 @@
 		}
 	</style>
 </head>
-<body>
+<body><div class="container-lg px-3 my-5 markdown-body">
 	<h1>All characters</h1>
 	<p>All special characters supported by the font live in a subset of the Unicode private use area in the basic multilingual plane, from <code>U+E000</code> to <code>U+E0FF</code>. The following table shows a preview of every character in this subset, as it appears when rendered with the icon font.</p>
 	<table>
@@ -367,3 +359,5 @@
 			</tr>
 		</tbody>
 	</table>
+</div></body>
+</html>
