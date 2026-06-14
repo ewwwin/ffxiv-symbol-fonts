@@ -9,10 +9,10 @@ jobs:
       contents: write
       pull-requests: write
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - run: sudo apt install -y fontforge
       - run: ./make.sh
-      - uses: peter-evans/create-pull-request@v7
+      - uses: peter-evans/create-pull-request@v8
         with:
           commit-message: Automated font update from Lodestone
           branch: chore/gha-update-from-lodestone
